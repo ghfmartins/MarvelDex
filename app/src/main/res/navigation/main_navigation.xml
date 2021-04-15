@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/recepcaoFragment">
+
+    <fragment
+        android:id="@+id/recepcaoFragment"
+        android:name="com.api.marveldex.ui.RecepcaoFragment"
+        android:label="fragment_recepcao"
+        tools:layout="@layout/fragment_recepcao" >
+        <action
+            android:id="@+id/action_recepcaoFragment_to_timeLineFragment"
+            app:destination="@id/timeLineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeLineFragment"
+        android:name="com.api.marveldex.ui.TimeLineFragment"
+        android:label="fragment_time_line"
+        tools:layout="@layout/fragment_time_line" />
+</navigation>
